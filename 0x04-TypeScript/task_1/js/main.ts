@@ -82,4 +82,24 @@ P_T2.innerHTML = JSON.stringify(director1, null, 2);
 SECTION_T2.appendChild(P_T2);
 B.appendChild(SECTION_T2);
 
+// task 3:
+const SECTION_T3 = document.createElement('SECTION');
+const H2_T3 = document.createElement('H2');
+H2_T3.innerText = 'Task 3';
+SECTION_T3.appendChild(H2_T3);
+const P_T3 = document.createElement('P');
+P_T3.innerHTML = 'Click to call printTeacher: ';
+SECTION_T3.appendChild(P_T3);
+const BUTTON_T3 = document.createElement('BUTTON');
+BUTTON_T3.innerText = 'Print Teacher';
+BUTTON_T3.onclick = () => {
+  const printTeacherStr = printTeacher(teacher3.firstName, teacher3.lastName);
+  console.log('Task 3: printTeacher: ', printTeacherStr);
+  const P = document.createElement('P');
+  P.innerText = printTeacherStr;
+  SECTION_T3.appendChild(P);
+};
+SECTION_T3.appendChild(BUTTON_T3);
+B.appendChild(SECTION_T3);
+
 
