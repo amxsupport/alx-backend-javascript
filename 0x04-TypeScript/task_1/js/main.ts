@@ -64,4 +64,22 @@ P_T1.innerHTML = JSON.stringify(teacher3, null, 2);
 SECTION_T1.appendChild(P_T1);
 B.appendChild(SECTION_T1);
 
+// task 2:
+const SECTION_T2 = document.createElement('SECTION');
+const H2_T2 = document.createElement('H2');
+H2_T2.innerText = 'Task 2';
+SECTION_T2.appendChild(H2_T2);
+const director1: Directors = {
+  firstName: 'John',
+  lastName: 'Doe',
+  location: 'London',
+  fullTimeEmployee: true,
+  numberOfReports: 17,
+};
+console.log('Task 2', director1);
+const P_T2 = document.createElement('P');
+P_T2.innerHTML = JSON.stringify(director1, null, 2);
+SECTION_T2.appendChild(P_T2);
+B.appendChild(SECTION_T2);
+
 
