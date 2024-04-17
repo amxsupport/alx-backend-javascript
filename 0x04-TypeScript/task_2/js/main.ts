@@ -47,4 +47,15 @@ function createEmployee(salary: number | string): Teacher | Director {
   return isNaN(Number(salary)) && salary > 500 ? new Director() : new Teacher();
 }
 
+// Solution for task 6:
+function isDirector(employee: Director | Teacher): employee is Director {
+  return (employee as Director).workDirectorTasks !== undefined;
+}
+
+function executeWork(employee: Director | Teacher): string {
+  return isDirector(employee)
+    ? (employee as Director).workDirectorTasks()
+    : (employee as Teacher).workTeacherTasks();
+}
+
 
