@@ -27,4 +27,21 @@ interface IStudent {
   workOnHomework: () => string;
 }
 
+class StudentClass implements IStudent {
+  displayName: string;
+
+  constructor(props: IStudentClassProps) {
+    this.displayName = props.firstName;
+  }
+
+  workOnHomework() {
+    return 'Currently working';
+  }
+}
+
+const printTeacher: printTeacherFunction = (
+  firstName: string,
+  lastName: string
+) => `${firstName.substring(0, 1)}. ${lastName}`;
+
 
