@@ -65,4 +65,20 @@ function teachClass(todayClass:Subjects): string {
     return `Teaching ${todayClass}`;
 }
 
+// Examples:
 
+// task 5:
+console.log(createEmployee(200));
+console.log(createEmployee(1000));
+console.log(createEmployee('$500'));
+// console.log(createEmployee(true));
+
+// task 6:
+console.log(executeWork(createEmployee(200)))
+console.log(executeWork(createEmployee(1000)))
+// console.log(executeWork("Teacher");
+
+// task 7
+console.log(teachClass('Math'));
+console.log(teachClass('History'));
+// console.log(teachClass('Science'));
