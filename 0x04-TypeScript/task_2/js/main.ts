@@ -58,4 +58,11 @@ function executeWork(employee: Director | Teacher): string {
     : (employee as Teacher).workTeacherTasks();
 }
 
+// Solution for task 7:
+type Subjects = "Math" | "History";
+
+function teachClass(todayClass:Subjects): string {
+    return `Teaching ${todayClass}`;
+}
+
 
