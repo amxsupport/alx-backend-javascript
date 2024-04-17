@@ -12,3 +12,19 @@ interface Directors extends Teacher {
   numberOfReports: number;
 }
 
+interface printTeacherFunction {
+  (firstName: string, lastName: string): string;
+}
+
+// solution for task 3
+interface IStudentClassProps {
+  firstName: string;
+  lastName: string;
+}
+
+interface IStudent {
+  displayName: string;
+  workOnHomework: () => string;
+}
+
+
