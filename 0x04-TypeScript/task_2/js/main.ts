@@ -38,4 +38,13 @@ class Teacher implements TeacherInterface {
   workTeacherTasks = () => 'Getting to work';
 }
 
+// Create a function createEmployee with the following requirements:
+// It can return either a Director or a Teacher instance
+// It accepts 1 arguments:
+// salary(either number or string)
+// if salary is a number and less than 500 - It should return a new Teacher. Otherwise it should return a Director
+function createEmployee(salary: number | string): Teacher | Director {
+  return isNaN(Number(salary)) && salary > 500 ? new Director() : new Teacher();
+}
+
 
