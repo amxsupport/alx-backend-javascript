@@ -102,4 +102,28 @@ BUTTON_T3.onclick = () => {
 SECTION_T3.appendChild(BUTTON_T3);
 B.appendChild(SECTION_T3);
 
-
+// task 4:
+const SECTION_T4 = document.createElement('SECTION');
+const H2_T4 = document.createElement('H2');
+H2_T4.innerText = 'Task 4';
+SECTION_T4.appendChild(H2_T3);
+const student = new StudentClass({ firstName: 'Bart', lastName: 'Simpson' });
+console.log('Task 4: ', student);
+const P_T4 = document.createElement('P');
+P_T4.style.lineHeight = "1.2";
+P_T4.style.fontSize = "1em";
+P_T4.innerHTML = `
+  <code style="background: lightgrey;">
+    const student = new StudentClass({ firstName: 'Bart', lastName: 'Simpson' });
+    <br>
+    console.log(student);
+  </code>
+  <br>
+    --> ${JSON.stringify(student, null, 2)} 
+  <br>
+  <code style="background: lightgrey;">console.log(student.workOnHomework());</code>
+  <br>
+    --> ${student.workOnHomework()}
+  `;
+SECTION_T4.appendChild(P_T4);
+B.appendChild(SECTION_T4);
